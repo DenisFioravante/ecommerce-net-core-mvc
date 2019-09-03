@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
+using WebApplication1.Models.ViewModels;
 
-namespace WebApplication1.Controllers
+namespace Ecommerce.Controllers
 {
     public class HomeController : Controller
     {
@@ -17,7 +17,8 @@ namespace WebApplication1.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Ecommerce-Web-MVC.";
+            ViewData["Developer"] = "Denis Fioravante";
 
             return View();
         }
